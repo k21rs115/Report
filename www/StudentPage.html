@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+    <script src="js/keys.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+  <!-- Student Page -->
+  <div data-role="page" id="StudentPage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>サポーちゃん</h1>
+    </header>
+    <!--学籍番号 -->
+    <div>
+        <label for="StudentNum">学籍番号</label>
+        <input id="StudentNum" type="text" value="xxRSxxx">
+    </div>
+    <!--座席 -->
+    <div>
+        <label for="SeatNum">座席番号</label>
+        <input id="SeatNum" type="number" value="999">
+    </div>
+    <!--質問 -->
+    <div>
+        <label for="Question">質問</label>
+        <input id="Question" type="text" value="何でもいいです。">
+    </div>
+    <div id="button">
+        <!--送信ボタン -->
+        <button id="Submit_btn" class="btn" onclick="SubmitBtn()">送信</button>
+        <!-- 直前のページに戻る -->
+        <button onclick="history.back()">戻る</button>
+    </div>
+      <div id="message">メッセージ</div>
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <script src="components/loader.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/ncmb-latest.min.js"></script>
+  <script src="js/keys.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/cssua.min.js"></script>
+</head>
+<body>
+
+  <!-- ログインページ -->
+  <div data-role="page" id="LoginPage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>サポーちゃんDemo</h1>
+    </header>
+      <section data-role="content">
+      <h1>ログイン</h1>
+      ユーザー名
+        <input type="text" id="login_username">
+      パスワード
+        <input type="password" id="login_password">
+        <a href="#RegisterPage" data-role="button" data-mini="true" data-inline="true" data-theme="b">登録</a>
+        <a href="#" id="LoginBtn" data-role="button" data-inline="false" data-theme="b">ログインする</a>
+      </section>
+  </div>
+
+  <!-- 登録ページ -->
+  <div data-role="page" id="RegisterPage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>サポーちゃんDemo</h1>
+    </header>
+      <section data-role="content">
+      <h1>新規登録</h1>
+      ユーザー名
+        <input type="text" id="reg_username">
+      パスワード
+        <input type="password" id="reg_password">
+        <a href="#" id="RegisterBtn" data-role="button" data-inline="false" data-theme="b">登録する</a>
+        <a href="#LoginPage" data-role="button" data-mini="true" data-inline="true" data-theme="b">戻る</a>
+      </section>
+  </div>
+
+    <!-- Student or SA ページ -->
+  <div data-role="page" id="ChoosePage">
+    <header data-role="header" data-position="fixed" data-theme="c">
+      <h1>サポーちゃんDemo</h1>
+    </header>
+      <section data-role="content">
+      <h1>あなたはどちらですか？</h1>
+        <!-- StudentPage.htmlへ遷移 -->
+        <button onclick="location.href='./StudentPage.html'">学生</button>
+        
+        <!-- SA.htmlへ遷移 -->
+        <button onclick="location.href='./SA.html'">SAさん</button>
+
+        <!-- 直前のページに戻る -->
+        <button onclick="history.back()">戻る</button>
+      </section>
+  </div>
+ 
+</body>
+</html>
